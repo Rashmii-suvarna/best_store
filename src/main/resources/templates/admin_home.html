@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BestStore - Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #fceabb, #f8b500);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222831;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            padding: 10px 16px;
+            margin: 4px;
+            border: none;
+            background-color: #ff5722;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #e64a19;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #37474F;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222831;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    BestStore - Admin Dashboard
+</header>
+
+<div class="container">
+    <a href="/addProduct" class="btn">+ Add Product</a>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price (₹)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="product : ${products}">
+                <td th:text="${product.name}">Sample Name</td>
+                <td th:text="${product.price}">0.00</td>
+                <td>
+                    <a th:href="@{'/edit/' + ${product.id}}" class="btn">Edit</a>
+					<a th:href="@{'/delete/' + ${product.id}}" class="btn">Delete</a>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form th:action="@{/logout}" method="post" style="margin-top: 30px;">
+        <button type="submit" class="btn">Logout</button>
+    </form>
+</div>
+
+<footer>
+    &copy; 2025 BestStore. All rights reserved.
+</footer>
+
+</body>
+</html>

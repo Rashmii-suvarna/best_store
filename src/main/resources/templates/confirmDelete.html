@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Confirm Delete</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffeaa7;
+            padding: 50px;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            background: #d63031;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cancel {
+            background: #636e72;
+        }
+        h2 {
+            color: #2d3436;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>Confirm Deletion</h2>
+    <p>Are you sure you want to delete the following product?</p>
+    <p><strong th:text="${product.name}">Product Name</strong> — ₹<span th:text="${product.price}">0.00</span></p>
+
+    <form th:action="@{'/deleteConfirmed/' + ${product.id}}" method="post">
+        <!-- ✅ CSRF Token for Spring Security -->
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+        <button type="submit" class="btn">Yes, Delete</button>
+        <a href="/admin/home" class="btn cancel">Cancel</a>
+    </form>
+</div>
+</body>
+</html>
