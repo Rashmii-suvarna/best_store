@@ -124,19 +124,20 @@ MySQL installed and running
 git clone https://github.com/your-username/best_store.git
 cd best_store
 
-# Configure your MySQL DB in src/main/resources/application.properties
+Configure your MySQL DB in src/main/resources/application.properties
 
 # Run the app
 ./mvnw spring-boot:run
-🔐 Default Credentials
-Role	Username	Password
-Admin	admin	admin123
-User	user	user123
+
+| Role  | Username | Password |
+| ----- | -------- | -------- |
+| Admin | admin    | admin123 |
+| User  | user     | user123  |
 
 You can change these inside SecurityConfig.java.
 
-🙋‍♀️ About the Developer
+# About the Developer
 Rashmi Suvarna
 🧑‍🎓 MCA Student | 🌐 Java & Spring Boot Developer
 
-🔗 LinkedIn Profile
+🔗 LinkedIn Profile(https://www.linkedin.com/in/rashmi2003/)
