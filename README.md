@@ -52,20 +52,24 @@ It allows **Admins** to add, edit, and delete products, while **Users** can view
 
 ---
 
-## 📸 Screenshots
+## 📸 **Screenshots**
 
-<p><strong>Login Screen</strong><br/>
-<img src="screenshots/login.png" width="400"/>
+<p><strong> Login Screen</strong><br/>
+<img src="screenshots/Screenshot_2025-07-02-12-15-21-227_com.example.event_planner_app - Copy - Copy.jpg" width="400"/>
 </p>
 
-<p><strong>Admin Dashboard</strong><br/>
-<img src="screenshots/admin_dashboard.png" width="400"/>
+
+<p><strong> Home Screen</strong><br/>
+<img src="screenshots/Screenshot_2025-07-02-12-15-39-294_com.example.event_planner_app.jpg" width="400"/>
 </p>
 
-<p><strong>User Dashboard</strong><br/>
-<img src="screenshots/user_dashboard.png" width="400"/>
+<p><strong> Create Event Screen</strong><br/>
+<img src="screenshots/Screenshot_2025-07-02-12-18-18-374_com.example.event_planner_app.jpg" width="400"/>
 </p>
 
+<p><strong> Event Info screen </strong><br/>
+<img src="screenshots/Screenshot_2025-07-02-12-20-04-137_com.example.event_planner_app - Copy.jpg" width="400"/>
+</p>
 <p><strong>Add Product</strong><br/>
 <img src="screenshots/add_product.png" width="400"/>
 </p>
