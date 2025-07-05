@@ -54,33 +54,41 @@ It allows **Admins** to add, edit, and delete products, while **Users** can view
 
 ## 📸 **Screenshots**
 
-<p><strong> Login Screen</strong><br/>
-<img src="screenshots/Screenshot_2025-07-02-12-15-21-227_com.example.event_planner_app - Copy - Copy.jpg" width="400"/>
-</p>
+<p><strong> Admin Login Screen</strong><br/>
+  <img src="screenshots/Screenshot 2025-07-04 143806.png" " width="600" />
+</p></br>
 
 
-<p><strong> Home Screen</strong><br/>
-<img src="screenshots/Screenshot_2025-07-02-12-15-39-294_com.example.event_planner_app.jpg" width="400"/>
-</p>
+<p><strong> Admin Dashboard Screen</strong><br/>
+<img src="screenshots/Screenshot 2025-07-04 144014.png" width="600"/>
+</p></br>
 
-<p><strong> Create Event Screen</strong><br/>
-<img src="screenshots/Screenshot_2025-07-02-12-18-18-374_com.example.event_planner_app.jpg" width="400"/>
-</p>
 
-<p><strong> Event Info screen </strong><br/>
-<img src="screenshots/Screenshot_2025-07-02-12-20-04-137_com.example.event_planner_app - Copy.jpg" width="400"/>
-</p>
-<p><strong>Add Product</strong><br/>
-<img src="screenshots/add_product.png" width="400"/>
-</p>
+<p><strong> Add Product Screen</strong><br/>
+<img src="screenshots/Screenshot 2025-07-04 143858.png" width="600"/>
+</p></br>
 
-<p><strong>Edit Product</strong><br/>
-<img src="screenshots/edit_product.png" width="400"/>
-</p>
 
-<p><strong>Delete Confirmation</strong><br/>
-<img src="screenshots/delete_confirm.png" width="400"/>
-</p>
+
+<p><strong> Edit Product</strong><br/>
+<img src="screenshots/Screenshot 2025-07-04 144039.png" width="600"/>
+</p></br>
+
+<p><strong> Delete Product Screen</strong><br/>
+<img src="screenshots/Screenshot 2025-07-04 144105.png" width="600"/>
+</p></br>
+
+<p><strong> Admin result Screen</strong><br/>
+<img src="screenshots/Screenshot 2025-07-04 144123.png" width="600"/>
+</p></br>
+
+<p><strong> User Login Screen</strong><br/>
+<img src="screenshots/Screenshot 2025-07-04 144143.png" width="600"/>
+</p></br>
+
+<p><strong> User Dashboard Screen</strong><br/>
+<img src="screenshots/Screenshot 2025-07-04 144204.png" width="600" />
+</p></br>
 
 ---
 
@@ -126,6 +134,7 @@ MySQL installed and running
 
 # Clone the repo
 git clone https://github.com/your-username/best_store.git
+
 cd best_store
 
 Configure your MySQL DB in src/main/resources/application.properties
@@ -138,7 +147,6 @@ Configure your MySQL DB in src/main/resources/application.properties
 | Admin | admin    | admin123 |
 | User  | user     | user123  |
 
-You can change these inside SecurityConfig.java.
 
 # About the Developer
 Rashmi Suvarna
